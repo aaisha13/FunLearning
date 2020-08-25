@@ -8,8 +8,11 @@
 
 import UIKit
 import Firebase
+ 
+  
 
-class ViewController: UIViewController {
+
+class LoginViewController: UIViewController {
 
     @IBOutlet weak var userTextfield: UITextField!
     
@@ -18,11 +21,12 @@ class ViewController: UIViewController {
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
     
-        Auth.auth().signIn(withEmail: userTextfield.text!, password: passwordTextField.text!) { (result, error) in
+        Auth.auth().signIn(withEmail: userTextfield.text!, password: passwordTextField.text!)
+        {
+            (result, error) in
             if (error != nil){
                 print(error?.localizedDescription)
-            }
-            else{
+            } else {
                 print("Success")
             }
         }

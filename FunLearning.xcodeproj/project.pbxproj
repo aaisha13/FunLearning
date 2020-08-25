@@ -7,20 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0417538024F56D7C009E93B7 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0417537F24F56D7C009E93B7 /* FirebaseAuth.framework */; };
+		0417538124F56D7C009E93B7 /* FirebaseAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0417537F24F56D7C009E93B7 /* FirebaseAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		047A6C4024F558CE00EF4721 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A6C3F24F558CE00EF4721 /* SignUpViewController.swift */; };
 		04B5AEFB24E26E98000859EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5AEFA24E26E98000859EC /* AppDelegate.swift */; };
 		04B5AEFD24E26E98000859EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5AEFC24E26E98000859EC /* SceneDelegate.swift */; };
-		04B5AEFF24E26E98000859EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5AEFE24E26E98000859EC /* ViewController.swift */; };
+		04B5AEFF24E26E98000859EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5AEFE24E26E98000859EC /* LoginViewController.swift */; };
 		04B5AF0224E26E98000859EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B5AF0024E26E98000859EC /* Main.storyboard */; };
 		04B5AF0424E26E99000859EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B5AF0324E26E99000859EC /* Assets.xcassets */; };
 		04B5AF0724E26E99000859EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B5AF0524E26E99000859EC /* LaunchScreen.storyboard */; };
 		656B181B04759341DBE408F5 /* Pods_FunLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 352ED13F8A38F893F6576A14 /* Pods_FunLearning.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0417538224F56D7C009E93B7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0417538124F56D7C009E93B7 /* FirebaseAuth.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0417537F24F56D7C009E93B7 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		047A6C3F24F558CE00EF4721 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		04B5AEF724E26E98000859EC /* FunLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B5AEFA24E26E98000859EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B5AEFC24E26E98000859EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04B5AEFE24E26E98000859EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04B5AEFE24E26E98000859EC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04B5AF0124E26E98000859EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04B5AF0324E26E99000859EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04B5AF0624E26E99000859EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				656B181B04759341DBE408F5 /* Pods_FunLearning.framework in Frameworks */,
+				0417538024F56D7C009E93B7 /* FirebaseAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,11 +85,12 @@
 			children = (
 				04B5AEFA24E26E98000859EC /* AppDelegate.swift */,
 				04B5AEFC24E26E98000859EC /* SceneDelegate.swift */,
-				04B5AEFE24E26E98000859EC /* ViewController.swift */,
+				04B5AEFE24E26E98000859EC /* LoginViewController.swift */,
 				04B5AF0024E26E98000859EC /* Main.storyboard */,
 				04B5AF0324E26E99000859EC /* Assets.xcassets */,
 				04B5AF0524E26E99000859EC /* LaunchScreen.storyboard */,
 				04B5AF0824E26E99000859EC /* Info.plist */,
+				047A6C3F24F558CE00EF4721 /* SignUpViewController.swift */,
 			);
 			path = FunLearning;
 			sourceTree = "<group>";
@@ -86,6 +107,7 @@
 		D16D520E691E068B84D61B1E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0417537F24F56D7C009E93B7 /* FirebaseAuth.framework */,
 				352ED13F8A38F893F6576A14 /* Pods_FunLearning.framework */,
 			);
 			name = Frameworks;
@@ -103,6 +125,7 @@
 				04B5AEF424E26E98000859EC /* Frameworks */,
 				04B5AEF524E26E98000859EC /* Resources */,
 				85639A037634C0BC39DEEC40 /* [CP] Embed Pods Frameworks */,
+				0417538224F56D7C009E93B7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,8 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B5AEFF24E26E98000859EC /* ViewController.swift in Sources */,
+				04B5AEFF24E26E98000859EC /* LoginViewController.swift in Sources */,
 				04B5AEFB24E26E98000859EC /* AppDelegate.swift in Sources */,
+				047A6C4024F558CE00EF4721 /* SignUpViewController.swift in Sources */,
 				04B5AEFD24E26E98000859EC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
